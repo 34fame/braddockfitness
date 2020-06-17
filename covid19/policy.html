@@ -27,22 +27,18 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
       <!--Braddock Fitness CSS-->
-      <link rel="stylesheet" href="css/main.css" />
+      <link rel="stylesheet" href="../css/main.css" />
 
       <title>Braddock Fitness, LLC.</title>
    </head>
 
    <body>
-      <div class="hamburger-menu">
-         <i class="fas fa-bars"></i>
-      </div>
-
       <div style="height: 100vh;">
          <!--Braddock Fitness Logo on Navbar-->
          <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="testimonials/bf_logo.html">
+            <a class="navbar-brand" href="../index.html">
                <img
-                  src="images/bf_logo_640x640.png"
+                  src="../images/bf_logo_640x640.png"
                   width="45"
                   height="45"
                   alt="Braddock Fitness Logo"
@@ -53,7 +49,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                     <a class="nav-link" href="contacts/contact_us.html">
+                     <a class="nav-link" href="../contacts/contact_us.html">
                         Contact Us <span class="sr-only">(current)</span>
                      </a>
                   </li>
@@ -86,19 +82,23 @@
                      >
                         <a
                            class="dropdown-item"
-                           href="training_staff/instructors.html"
+                           href="../training_staff/instructors.html"
                            >Training Staff</a
                         >
-                        <a class="dropdown-item" href="program/programming.html"
+                        <a
+                           class="dropdown-item"
+                           href="../program/programming.html"
                            >Programmimg</a
                         >
                         <a
                            class="dropdown-item"
-                           href="destination/location.html"
+                           href="../destination/location.html"
                            >Location</a
                         >
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="membership/sign_up.html"
+                        <a
+                           class="dropdown-item"
+                           href="../membership/sign_up.html"
                            >Sign Up</a
                         >
                      </div>
@@ -126,36 +126,23 @@
             </div>
          </nav>
 
-         <!--Braddock Fitness Jumbotron Image-->
-         <div class="home-norepeat jumbotron jumbotron-fluid">
-            <div class="container" style="height: 100%;">
-               <!-- Title -->
-               <div class="d-flex flex-row justify-content-center">
-                  <span class="display-2 text-white">Braddock Fitness</span>
-               </div>
-
-               <!-- Teaser -->
-               <div class="mt-4 d-flex flex-row justify-content-center">
-                  <span class="lead text-white"></span>
-               </div>
-
-               <!-- Call to Action -->
-               <div
-                  class="d-flex flex-row justify-content-center align-items-center"
-                  style="height: 80%;"
+         <!-- Site Header -->
+         <header class="site-header font-small pt-4">
+            <div
+               class="container-fluid text-center text-md"
+               style="height: 80%;"
+            >
+               <a
+                  class="btn"
+                  href="https://www.facebook.com/braddockfitnessllc/"
+                  target="_blank"
                >
-                  <a
-                     class="btn"
-                     href="https://www.facebook.com/braddockfitnessllc/"
-                     target="_blank"
-                  >
-                     <button type="button" class="btn btn-lg btn-outline-light">
-                        BEGIN YOUR JOURNEY
-                     </button></a
-                  >
-               </div>
+                  <button type="button" class="btn btn-lg btn-outline-light">
+                     BEGIN YOUR JOURNEY
+                  </button></a
+               >
             </div>
-         </div>
+         </header>
 
          <!-- Site footer -->
          <footer class="site-footer">
@@ -233,7 +220,7 @@
                            >
                         </li>
                         <li>
-                           <a href="../covid19/policy.html">COVID-19 Policy</a>
+                           <a href="">COVID-19 Policy</a>
                         </li>
                         <li>
                            <a href="http://scanfcode.com/privacy-policy/"></a>
