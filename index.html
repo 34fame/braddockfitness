@@ -28,15 +28,13 @@
 
       <!--Braddock Fitness CSS-->
       <link rel="stylesheet" href="css/main.css" />
+      <script type="text/javascript" src="scripts/main.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
       <title>Braddock Fitness, LLC.</title>
    </head>
 
    <body>
-      <div class="hamburger-menu">
-         <i class="fas fa-bars"></i>
-      </div>
-
       <div style="height: 100vh;">
          <!--Braddock Fitness Logo on Navbar-->
          <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
@@ -49,22 +47,29 @@
                   loading="lazy"
                />
             </a>
+            <!-- Collapse Navbar -->
+               <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+                  aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+                  <div class="animated-icon1"><span></span><span></span><span></span></div>
+               </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Collapse content -->
+               <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+
+            <!-- Site Links -->
                <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                     <a class="nav-link" href="contacts/contact_us.html">
-                        Contact Us <span class="sr-only">(current)</span>
-                     </a>
+                     <a class="nav-link" 
+                     href="contacts/contact_us.html">Contact Us <span 
+                     class="sr-only">(current)</span></a>
                   </li>
-
-                  <li class="nav-item">
+                     <li class="nav-item">
                      <a
-                        class="nav-link"
-                        href="https://www.facebook.com/ggsgym/videos/283777925780970/?t=2"
-                        target="_blank"
+                     class="nav-link"
+                     href="https://www.facebook.com/ggsgym/videos/283777925780970/?t=2"
+                     target="_blank"
                      >
-                        Link
+                     Link
                      </a>
                   </li>
                   <li class="nav-item dropdown">
@@ -123,8 +128,8 @@
                      >
                   </li>
                </ul>
-            </div>
          </nav>
+            <!-- Collapse Navbar -->
 
          <!--Braddock Fitness Jumbotron Image-->
          <div class="home-norepeat jumbotron jumbotron-fluid">
