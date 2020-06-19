@@ -42,6 +42,20 @@ function validateForm() {
    }
    document.querySelector(".status").innerHTML = "Sending...";
 }
+
+/* Send Email via GoDaddy */
+function sendEmail() {
+   Email.send({
+      Host: "smtpout.secureserver.net",
+      Username: "sage.braddock@braddockfitnessllc.com",
+      Password: "<email password>",
+      To: "<recipient’s email address>",
+      From: "sage.braddock@braddockfitnessllc.com",
+      Subject: "Contact Us Form",
+      Body: "<email body>",
+   }).then((message) => alert("mail sent successfully"));
+}
+
 document.getElementById("status").innerHTML = "Sending...";
 formData = {
    name: $("input[name=name]").val(),
@@ -49,6 +63,7 @@ formData = {
    subject: $("input[name=subject]").val(),
    message: $("textarea[name=message]").val(),
 };
+
 $.ajax({
    url: "mail.php",
    type: "POST",
